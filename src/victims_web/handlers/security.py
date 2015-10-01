@@ -146,7 +146,7 @@ def validate_signature():
 
         if len(request.files) > 0:
             for f in request.files.values():
-                md5sums.append(md5(f.stream.getvalue()).hexdigest())
+                md5sums.append(md5(f.read()).hexdigest())
 
         expected = generate_signature(
             apikey, request.method, path,
