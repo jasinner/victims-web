@@ -83,18 +83,20 @@ class JavaManager(Manager):
             raise ValueError('Could not identify artifact using provided info')
 
     def download(self, info):
-
-        def is_valid_sha1(value):
-            return value is not None and len(value) == 40
-
         artifact = self.make_artifact(info)
         queue = {}
         for repo in self.repos:
             uri = repo.get_artifact_uri(artifact, 'jar')
             LOGGER.debug("Downloading from: %s" % uri)
             sha1 = repo.download_check_sum('sha1', uri)
-            if is_valid_sha1(sha1) and sha1 not in queue:
-                queue[sha1] = repo
+            if sha1 is not None:
+                if sha1 not in queue:
+                    LOGGER.info("adding sha1 %s to queue for %s" % (sha1, uri))
+                    queue[sha1] = repo
+                    break #use the first valid sha1 of a jar from any repo
+            else:
+                LOGGER.warn("Didn't find sha1 for %s" % uri)
+
 
         if len(queue) == 0:
             raise ValueError('No artifact found for %s' % (artifact))
