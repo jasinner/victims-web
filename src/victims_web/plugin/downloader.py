@@ -40,7 +40,7 @@ class DownloadException(Exception):
     pass
 
 
-def download(url, target, async=False, close_target=False, quiet=True):
+def download(url, target, async=False, close_target=False, quiet=False):
     # download file to target (target is a file-like object)
     if async:
         _pool.submit(url, target)
