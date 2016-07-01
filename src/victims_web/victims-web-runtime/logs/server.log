@@ -1,0 +1,103 @@
+Mon Jun 27 2016 14:58:59 AEST - INFO:  * Restarting with stat
+Mon Jun 27 2016 14:58:59 AEST - WARNING:  * Debugger is active!
+Mon Jun 27 2016 14:58:59 AEST - INFO:  * Debugger pin code: 255-638-429
+Mon Jun 27 2016 14:59:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:16] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:16] "GET /static//css/style.css HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:16] "GET /static/css/victims.css HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:16] "GET /static//images/victims-button.png HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:18 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:18] "GET /favicon.ico HTTP/1.1" 404 -
+Mon Jun 27 2016 14:59:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:24] "GET /login HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:31 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:31] "POST /login HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:41 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:41] "POST /login HTTP/1.1" 200 -
+Mon Jun 27 2016 14:59:50 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 14:59:50] "POST /login HTTP/1.1" 200 -
+Mon Jun 27 2016 15:01:56 AEST - INFO: adminuser logged in
+Mon Jun 27 2016 15:01:56 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:01:56] "POST /login HTTP/1.1" 302 -
+Mon Jun 27 2016 15:01:56 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:01:56] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 15:04:18 AEST - DEBUG: X-Victims-Api header not present in request
+Mon Jun 27 2016 15:04:19 AEST - INFO: [java] Downloading for {'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collection'}
+Mon Jun 27 2016 15:04:19 AEST - DEBUG: Downloading from: http://repo1.maven.org/maven2/commons-collections/commons-collection/3.2.1.redhat-3/commons-collection-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:20 AEST - DEBUG: Downloading from: https://maven.repository.redhat.com/ga/commons-collections/commons-collection/3.2.1.redhat-3/commons-collection-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:22 AEST - INFO: Invalid submission by adminuser: No artifact found for commons-collections:commons-collection:3.2.1.redhat-3
+Mon Jun 27 2016 15:04:22 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:04:22] "PUT /service/v2/submit/archive/java/?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collection&cves=CVE-2015-7501 HTTP/1.1" 400 -
+Mon Jun 27 2016 15:04:41 AEST - DEBUG: X-Victims-Api header not present in request
+Mon Jun 27 2016 15:04:42 AEST - INFO: [java] Downloading for {'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}
+Mon Jun 27 2016 15:04:42 AEST - DEBUG: Downloading from: http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:42 AEST - DEBUG: Downloading from: https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:43 AEST - DEBUG: Downloading from: http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:43 AEST - DEBUG: Downloading from: https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:44 AEST - INFO: [Downloading] jar from https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:04:44 AEST - INFO: [Finished] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar downloaded 
+Mon Jun 27 2016 15:04:44 AEST - INFO: Submitting: group:java, suffix:Jar, coordinates:{'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}, filename:commons-collections-3.2.1.redhat-3.jar, source:./victims-web-runtime/downloads/b51419bd-9533-42b6-ba47-a2cdc75f3f10-jboss-ga-commons-collections-3.2.1.redhat-3.jar, entry:None, submitter:adminuser, approval:REQUESTED, metadata:{}, cves:[u'CVE-2015-7501']
+Mon Jun 27 2016 15:04:44 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:04:44] "PUT /service/v2/submit/archive/java/?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 201 -
+Mon Jun 27 2016 15:04:44 AEST - INFO: [Downloading] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar 633530 bytes to download
+Mon Jun 27 2016 15:04:46 AEST - INFO: [Downloading] Download https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar completed in 2.280509 secs
+Mon Jun 27 2016 15:18:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:16] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:16] "GET /static//images/victims-button.png HTTP/1.1" 304 -
+Mon Jun 27 2016 15:18:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:16] "GET /static/css/victims.css HTTP/1.1" 304 -
+Mon Jun 27 2016 15:18:16 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:16] "GET /static//css/style.css HTTP/1.1" 304 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/ HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/bootstrap/bootstrap2/css/bootstrap.css?v=2.3.2 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/admin/css/bootstrap2/admin.css?v=1.1.1 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/vendor/jquery.min.js?v=2.1.4 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/bootstrap/bootstrap2/js/bootstrap.min.js?v=2.3.2 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/vendor/moment.min.js?v=2.9.0 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/bootstrap/bootstrap2/css/bootstrap-responsive.css?v=2.3.2 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:24 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:24] "GET /admin/static/vendor/select2/select2.min.js?v=3.5.2 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:30 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:30] "GET /admin/downloads/ HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:30 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:30] "GET /admin/static/bootstrap/bootstrap2/img/glyphicons-halflings.png HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:30 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:30] "GET /admin/static/admin/js/actions.js?v=1.0.0 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:37 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:37] "GET /admin/downloads/download/b51419bd-9533-42b6-ba47-a2cdc75f3f10-jboss-ga-commons-collections-3.2.1.redhat-3.jar HTTP/1.1" 302 -
+Mon Jun 27 2016 15:18:37 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:37] "GET /downloads/b51419bd-9533-42b6-ba47-a2cdc75f3f10-jboss-ga-commons-collections-3.2.1.redhat-3.jar HTTP/1.1" 404 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/submissions/ HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker-bs2.css?v=1.3.22 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/static/admin/js/form.js?v=1.0.0 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/static/vendor/bootstrap-daterangepicker/daterangepicker.js?v=1.3.22 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/static/admin/js/filters.js?v=1.0.0 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:18:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:18:57] "GET /admin/static/vendor/select2/select2.css?v=3.5.2 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:19:25 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:19:25] "GET /admin/submissions/?sort=1 HTTP/1.1" 200 -
+Mon Jun 27 2016 15:19:31 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:19:31] "GET /admin/downloads/ HTTP/1.1" 200 -
+Mon Jun 27 2016 15:21:16 AEST - INFO:  * Detected change in '/Users/jasonshepherd/projects/victims/victims-web/src/victims_web/config.py', reloading
+Mon Jun 27 2016 15:26:20 AEST - INFO:  * Restarting with stat
+Mon Jun 27 2016 15:26:21 AEST - WARNING:  * Debugger is active!
+Mon Jun 27 2016 15:26:21 AEST - INFO:  * Debugger pin code: 255-638-429
+Mon Jun 27 2016 15:26:38 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:26:38] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 15:26:38 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:26:38] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 15:28:13 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:28:13] "GET / HTTP/1.1" 200 -
+Mon Jun 27 2016 15:28:14 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:28:14] "GET /static//css/style.css HTTP/1.1" 200 -
+Mon Jun 27 2016 15:28:14 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:28:14] "GET /static/css/victims.css HTTP/1.1" 200 -
+Mon Jun 27 2016 15:28:14 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:28:14] "GET /static//images/victims-button.png HTTP/1.1" 200 -
+Mon Jun 27 2016 15:31:27 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:31:27] "PUT /service/submit/archive/java?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 500 -
+Mon Jun 27 2016 15:32:22 AEST - DEBUG: X-Victims-Api header not present in request
+Mon Jun 27 2016 15:32:22 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:32:22] "PUT /service/submit/archive/java/?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 403 -
+Mon Jun 27 2016 15:32:57 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:32:57] "PUT /service/submit/archive/java?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 500 -
+Mon Jun 27 2016 15:33:07 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:33:07] "PUT /service/submit/archive/java?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 500 -
+Mon Jun 27 2016 15:33:21 AEST - DEBUG: X-Victims-Api header not present in request
+Mon Jun 27 2016 15:33:22 AEST - INFO: [java] Downloading for {'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}
+Mon Jun 27 2016 15:33:22 AEST - DEBUG: Downloading from: http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:33:23 AEST - DEBUG: Downloading from: https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:33:23 AEST - INFO: [Downloading] jar from https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 15:33:23 AEST - INFO: [Finished] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar downloaded 
+Mon Jun 27 2016 15:33:23 AEST - INFO: Submitting: group:java, suffix:Jar, coordinates:{'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}, filename:commons-collections-3.2.1.redhat-3.jar, source:./victims-web-runtime/downloads/13beedbc-eeff-4545-864d-0e3b1b508111-jboss-ga-commons-collections-3.2.1.redhat-3.jar, entry:None, submitter:adminuser, approval:REQUESTED, metadata:{}, cves:[u'CVE-2015-7501']
+Mon Jun 27 2016 15:33:23 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 15:33:23] "PUT /service/submit/archive/java/?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=CVE-2015-7501 HTTP/1.1" 201 -
+Mon Jun 27 2016 15:33:24 AEST - INFO: [Downloading] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar 633530 bytes to download
+Mon Jun 27 2016 15:33:24 AEST - INFO: [Downloading] Download https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar completed in 0.601379 secs
+Mon Jun 27 2016 17:06:01 AEST - INFO:  * Restarting with stat
+Mon Jun 27 2016 17:06:01 AEST - WARNING:  * Debugger is active!
+Mon Jun 27 2016 17:06:01 AEST - INFO:  * Debugger pin code: 255-638-429
+Mon Jun 27 2016 17:06:10 AEST - DEBUG: X-Victims-Api header not present in request
+Mon Jun 27 2016 17:06:10 AEST - INFO: [java] Downloading for {'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}
+Mon Jun 27 2016 17:06:10 AEST - DEBUG: Downloading from: http://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 17:06:11 AEST - DEBUG: Downloading from: https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 17:06:11 AEST - INFO: [Downloading] jar from https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar
+Mon Jun 27 2016 17:06:11 AEST - INFO: [Finished] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar downloaded 
+Mon Jun 27 2016 17:06:11 AEST - INFO: Submitting: group:java, suffix:Jar, coordinates:{'version': u'3.2.1.redhat-3', 'groupId': u'commons-collections', 'artifactId': u'commons-collections'}, filename:commons-collections-3.2.1.redhat-3.jar, source:./victims-web-runtime/downloads/aad93403-a779-4b55-afd2-7ef996187517-jboss-ga-commons-collections-3.2.1.redhat-3.jar, entry:None, submitter:adminuser, approval:REQUESTED, metadata:{}, cves:[u'2015-7501']
+Mon Jun 27 2016 17:06:12 AEST - INFO: 127.0.0.1 - - [27/Jun/2016 17:06:12] "PUT /service/v2/submit/archive/java/?version=3.2.1.redhat-3&groupId=commons-collections&artifactId=commons-collections&cves=2015-7501 HTTP/1.1" 201 -
+Mon Jun 27 2016 17:06:12 AEST - INFO: [Downloading] https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar 633530 bytes to download
+Mon Jun 27 2016 17:06:12 AEST - INFO: [Downloading] Download https://maven.repository.redhat.com/ga/commons-collections/commons-collections/3.2.1.redhat-3/commons-collections-3.2.1.redhat-3.jar completed in 0.555610 secs
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET / HTTP/1.1" 200 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET /favicon.ico HTTP/1.1" 404 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET /apple-touch-icon.png HTTP/1.1" 404 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET / HTTP/1.1" 200 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 -
+Tue Jun 28 2016 11:14:03 AEST - INFO: 127.0.0.1 - - [28/Jun/2016 11:14:03] "GET /apple-touch-icon.png HTTP/1.1" 404 -
