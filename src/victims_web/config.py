@@ -86,7 +86,8 @@ API_UPDATES_DEFAULT_FIELDS = [
 ]
 
 # plugin.charon
-MAVEN_REPOSITORIES = [('jboss-ga', 'https://maven.repository.redhat.com/ga/')]
+MAVEN_REPOSITORIES = [('jboss-ga', 'https://maven.repository.redhat.com/ga/'),
+    ('jboss-release', 'https://repository.jboss.org/nexus/content/repositories/releases/')]
 
 # WTF Config
 WTF_CSRF_ENABLED = False
