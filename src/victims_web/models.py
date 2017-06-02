@@ -38,7 +38,7 @@ from mongoengine import (
     EmbeddedDocumentField, ListField, EmailField
 )
 
-from victims_web.config import (
+from config import (
     BCRYPT_LOG_ROUNDS, SUBMISSION_GROUPS, HASHING_ALGORITHMS
 )
 

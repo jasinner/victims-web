@@ -22,9 +22,9 @@ Charon ferries the victims from their repositories to the judge of limbo.
 from abc import ABCMeta, abstractmethod
 from uuid import uuid4
 
-from victims_web import config
-from victims_web.plugin.downloader import DownloadException
-from victims_web.plugin.maven import Artifact, MavenHttpRemoteRepos
+from import config
+from plugin.downloader import DownloadException
+from plugin.maven import Artifact, MavenHttpRemoteRepos
 
 
 DOWNLOADS_DIR = config.DOWNLOAD_FOLDER

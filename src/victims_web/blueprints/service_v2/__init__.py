@@ -23,14 +23,14 @@ import json
 
 from flask import Blueprint, Response, request, current_app
 
-from victims_web.cache import cache
-from victims_web.config import \
+from cache import cache
+from config import \
     DEFAULT_GROUP, SUBMISSION_GROUPS, API_UPDATES_DEFAULT_FIELDS
-from victims_web.handlers.security import apiauth, api_request_user
-from victims_web.handlers.sslify import ssl_exclude
-from victims_web.models import Hash, Removal, JsonifyMixin, CoordinateDict
-from victims_web.submissions import submit, upload
-from victims_web.util import groups
+from handlers.security import apiauth, api_request_user
+from handlers.sslify import ssl_exclude
+from models import Hash, Removal, JsonifyMixin, CoordinateDict
+from submissions import submit, upload
+from util import groups
 
 
 v2 = Blueprint('service_v2', __name__)

@@ -26,15 +26,15 @@ from flask import (
 
 from flask.ext import login
 
-from victims_web.cache import cache
-from victims_web.config import SUBMISSION_GROUPS
-from victims_web.errors import ValidationError
-from victims_web.handlers.forms import \
+from cache import cache
+from config import SUBMISSION_GROUPS
+from errors import ValidationError
+from handlers.forms import \
     SUBMISSION_FORMS, ArtifactSubmit, flash_errors
-from victims_web.models import Hash, CoordinateDict
-from victims_web.plugin.crosstalk import indexmon
-from victims_web.submissions import submit, upload
-from victims_web.util import groups
+from models import Hash, CoordinateDict
+from plugin.crosstalk import indexmon
+from submissions import submit, upload
+from util import groups
 
 
 ui = Blueprint(

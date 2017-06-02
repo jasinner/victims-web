@@ -24,10 +24,10 @@ from datetime import datetime, timedelta
 
 from flask import current_app
 
-from victims_web.config import SUBMISSION_GROUPS
-from victims_web.handlers.task import taskman
-from victims_web.models import Hash, Submission
-from victims_web.plugin import PluginConfig
+from config import SUBMISSION_GROUPS
+from handlers.task import taskman
+from models import Hash, Submission
+from plugin import PluginConfig
 
 
 _CONFIG = PluginConfig('crosstalk')

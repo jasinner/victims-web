@@ -29,7 +29,7 @@ from time import strptime, mktime
 from urllib2 import urlopen, HTTPError
 from xml.etree import ElementTree
 
-from victims_web.plugin.downloader import \
+from plugin.downloader import \
     download, download_string, DownloadException
 
 USER_AGENT = 'victims-web-plugin/maven'

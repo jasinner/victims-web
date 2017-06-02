@@ -30,10 +30,10 @@ from flask.ext.admin.babel import lazy_gettext
 from flask.ext.admin.contrib.mongoengine import ModelView
 from flask.ext.admin.contrib.fileadmin import FileAdmin
 
-from victims_web.cache import cache
-from victims_web.handlers.forms import GroupHashable, ValidateOnlyIf
-from victims_web.models import Account, Hash, Submission
-from victims_web.util import groups, set_hash
+from cache import cache
+from handlers.forms import GroupHashable, ValidateOnlyIf
+from models import Account, Hash, Submission
+from util import groups, set_hash
 
 from flask.ext import login
 

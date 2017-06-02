@@ -29,8 +29,8 @@ from flask.ext.bcrypt import check_password_hash
 from flask.ext.login import (
     LoginManager, current_user, login_user, logout_user, user_logged_in)
 
-from victims_web import config
-from victims_web.user import (AnonymousUser, User, get_account)
+from import config
+from user import (AnonymousUser, User, get_account)
 
 
 def safe_redirect_url():

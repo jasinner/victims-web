@@ -22,9 +22,9 @@ from flask import flash
 from flask_wtf import Form, RecaptchaField
 from wtforms import fields, validators, ValidationError
 
-from victims_web.config import (
+from config import (
     SUBMISSION_GROUPS, DEBUG, HASHING_COMMANDS, TESTING)
-from victims_web.models import Account
+from models import Account
 
 
 def is_field_value(form, fieldname, value, negate=False):

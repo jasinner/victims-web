@@ -24,7 +24,7 @@ handlers:
         level: DEBUG
         filename: logs/server.json
 loggers:
-    victims_web:
+    
         level: DEBUG
         handlers: [jsonfile, file]
 

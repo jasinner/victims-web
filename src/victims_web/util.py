@@ -6,9 +6,9 @@ from urlparse import urlparse, urljoin
 
 from flask import request, flash
 
-from victims_web import config
-from victims_web.handlers.task import task
-from victims_web.models import Hash, Submission
+from import config
+from handlers.task import task
+from models import Hash, Submission
 
 
 def groups():

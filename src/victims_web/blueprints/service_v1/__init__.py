@@ -22,8 +22,8 @@ import datetime
 
 from flask import Blueprint, json, Response
 
-from victims_web.cache import cache
-from victims_web.models import Hash
+from cache import cache
+from models import Hash
 
 
 v1 = Blueprint('service_v1', __name__)

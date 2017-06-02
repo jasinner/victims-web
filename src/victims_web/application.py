@@ -41,7 +41,7 @@ csrf = SeaSurf(app)
 bootstrap = Bootstrap(app)
 
 # configuration
-app.config.from_object('victims_web.config')
+app.config.from_object('config')
 
 # logging
 logging.basicConfig(
@@ -66,19 +66,19 @@ if app.debug and not app.testing:
 app.db = MongoEngine(app)
 app.session_interface = MongoEngineSessionInterface(app.db)
 
-# victims_web setup
+# setup
 # this happens after basic setup to facilitate database availability
-from victims_web.admin import administration_setup
-from victims_web.blueprints.service_v1 import v1
-from victims_web.blueprints.service_v2 import v2, SUBMISSION_ROUTES
-from victims_web.blueprints.ui import ui
-from victims_web.blueprints.auth import auth
+from admin import administration_setup
+from blueprints.service_v1 import v1
+from blueprints.service_v2 import v2, SUBMISSION_ROUTES
+from blueprints.ui import ui
+from blueprints.auth import auth
 
-from victims_web.cache import cache
-from victims_web.handlers.security import setup_security
-from victims_web.handlers.sslify import VSSLify
-from victims_web.handlers.task import taskman
-from victims_web.plugin.crosstalk import session_reaper
+from cache import cache
+from handlers.security import setup_security
+from handlers.sslify import VSSLify
+from handlers.task import taskman
+from plugin.crosstalk import session_reaper
 
 # Custom SSLify
 sslify = VSSLify(app)

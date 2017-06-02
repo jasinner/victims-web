@@ -26,7 +26,7 @@ from re import search
 from requests import get
 from subprocess import check_output
 
-from victims_web.config import DOWNLOAD_FOLDER
+from config import DOWNLOAD_FOLDER
 
 
 BASE_URI = 'https://github.com/'

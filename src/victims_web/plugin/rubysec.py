@@ -20,9 +20,9 @@ from mongoengine import (
 from yaml import load
 from urlparse import urljoin
 
-from victims_web.models import Hash, ValidatedDocument, JsonifyMixin
-from victims_web.plugin import PluginConfig
-from victims_web.plugin.github import Repository
+from models import Hash, ValidatedDocument, JsonifyMixin
+from plugin import PluginConfig
+from plugin.github import Repository
 
 
 _CONFIG = PluginConfig('rubysec')
