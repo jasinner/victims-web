@@ -97,3 +97,5 @@ def generate_signature(secret, method, path, date, md5sums):
         digestmod=sha512
     ).hexdigest().upper()
 ```
+
+TODO: Delete me
