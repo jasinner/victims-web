@@ -23,7 +23,7 @@ from uuid import uuid4
 
 from werkzeug import secure_filename
 
-from import config
+import config
 from models import Submission
 from plugin.charon import download
 from plugin.crosstalk import indexmon

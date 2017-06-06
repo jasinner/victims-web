@@ -6,7 +6,7 @@ from urlparse import urlparse, urljoin
 
 from flask import request, flash
 
-from import config
+import config
 from handlers.task import task
 from models import Hash, Submission
 

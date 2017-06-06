@@ -29,7 +29,7 @@ from flask.ext.bcrypt import check_password_hash
 from flask.ext.login import (
     LoginManager, current_user, login_user, logout_user, user_logged_in)
 
-from import config
+import config
 from user import (AnonymousUser, User, get_account)
 
 

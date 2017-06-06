@@ -7,7 +7,7 @@
 # use env python by default
 PYTHON_BIN=python2
 VIRTIALENV_CMD="virtualenv --system-site-packages"
-SETUP_PY="setup.py"
+SETUP_PY="src/victims_web/setup.py"
 DIR_PREFIX="dev-env-victims"
 
 if [ $# -ne 0 ]; then
@@ -34,7 +34,7 @@ function virtualize()
     if [ -d ${DIR_NAME} ]; then
         activate $DIR_NAME
         
-        for REQ in $(find ./ -maxdepth 1 -type f -name "*requirements.txt"); do
+        for REQ in $(find ./ -maxdepth 3 -type f -name "*requirements.txt"); do
             echo "INFO: Installing requirements from ${REQ}"
             pip install -qr "${REQ}"
         done
