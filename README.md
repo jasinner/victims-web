@@ -98,4 +98,3 @@ def generate_signature(secret, method, path, date, md5sums):
     ).hexdigest().upper()
 ```
 
-TODO: Delete me
