@@ -148,4 +148,4 @@ if app.config.get('SENTRY_DSN', None):
 
 
 if __name__ == '__main__':
-    app.run(debug=app.config['DEBUG'])
+    app.run(port=8080, debug=app.config['DEBUG'])
