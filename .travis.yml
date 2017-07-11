@@ -8,7 +8,7 @@ before_script:
   - mongoimport -d victims -c users test/mongo_test_user.json
   - pip install coverage pep8
 install:
-  - pip install -e . 
+  - pip install -e src/victims_web 
 script:
   - pep8 --repeat src/
   - nosetests --logging-clear-handlers --with-coverage --cover-package=victims_web --cover-min-percentage=0 -v test/*.py
