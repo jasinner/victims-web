@@ -27,6 +27,8 @@ from flask.ext.seasurf import SeaSurf
 from flask.ext.bootstrap import Bootstrap
 from flask_reggie import Reggie
 
+import sys
+sys.path = [os.path.abspath(os.path.dirname(__file__))] + sys.path
 
 # Set up the application
 app = Flask('victims_web')

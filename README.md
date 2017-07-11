@@ -50,7 +50,7 @@ To test web-ui changes you might want to run the web-app on your local machine. 
 cd src/victims_web/
 python application.py
 ```
-You should be able to see the victims page at _http://localhost:5000/_ if everything was done correctly, with 1 hash record.
+You should be able to see the victims page at _http://localhost:8080/_ if everything was done correctly, with 1 hash record.
 
 ## Usage
 ### Secured API Access

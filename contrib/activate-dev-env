@@ -58,5 +58,3 @@ elif [ ! -f ${SETUP_PY} ]; then
 else
     virtualize
 fi
-
-export PYTHONPATH=$PYTHONPATH:$(pwd)/src
