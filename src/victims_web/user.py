@@ -18,7 +18,7 @@
 User related functions.
 """
 
-from flask.ext.login import UserMixin, AnonymousUserMixin
+from flask_login import UserMixin, AnonymousUserMixin
 
 from victims_web.models import Account
 

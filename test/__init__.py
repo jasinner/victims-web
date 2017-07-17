@@ -21,7 +21,7 @@ Unittesting.
 import unittest
 import re
 
-from flask.ext.bcrypt import generate_password_hash
+from flask_bcrypt import generate_password_hash
 
 from victims_web import application
 from victims_web.models import Account

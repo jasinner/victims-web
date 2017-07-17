@@ -22,9 +22,9 @@ import logging.config
 import os
 
 from flask import Flask, render_template, session
-from flask.ext.mongoengine import MongoEngine, MongoEngineSessionInterface
-from flask.ext.seasurf import SeaSurf
-from flask.ext.bootstrap import Bootstrap
+from flask_mongoengine import MongoEngine, MongoEngineSessionInterface
+from flask_seasurf import SeaSurf
+from flask_bootstrap import Bootstrap
 from flask_reggie import Reggie
 
 
@@ -148,4 +148,4 @@ if app.config.get('SENTRY_DSN', None):
 
 
 if __name__ == '__main__':
-    app.run(debug=app.config['DEBUG'])
+    app.run(host="0.0.0.0", debug=app.config['DEBUG'])

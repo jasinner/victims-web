@@ -22,7 +22,7 @@ from flask import (
     Blueprint, current_app, escape, flash, render_template, request,
     url_for, redirect)
 
-from flask.ext.login import fresh_login_required, login_required, current_user
+from flask_login import fresh_login_required, login_required, current_user
 from mongoengine import ValidationError
 
 from victims_web.handlers.forms import (

@@ -24,7 +24,7 @@ from flask import (
     Blueprint, current_app, escape, render_template, helpers,
     url_for, request, redirect, flash)
 
-from flask.ext import login
+from flask_import login
 
 from victims_web.cache import cache
 from victims_web.config import SUBMISSION_GROUPS

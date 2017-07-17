@@ -30,8 +30,8 @@ from hmac import HMAC
 from uuid import uuid4
 from bson.dbref import DBRef
 
-from flask.ext.bcrypt import generate_password_hash
-from flask.ext.mongoengine import Document
+from flask_bcrypt import generate_password_hash
+from flask_mongoengine import Document
 from mongoengine.base import BaseDocument
 from mongoengine import (
     StringField, DateTimeField, DictField, BooleanField, EmbeddedDocument,
