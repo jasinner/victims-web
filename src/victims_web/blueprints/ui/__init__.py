@@ -24,7 +24,7 @@ from flask import (
     Blueprint, current_app, escape, render_template, helpers,
     url_for, request, redirect, flash)
 
-from flask_import login
+from flask_login import current_user, login_required
 
 from victims_web.cache import cache
 from victims_web.config import SUBMISSION_GROUPS
@@ -143,7 +143,7 @@ def process_submission(form, group=None):
         files = upload(group, request.files.get('archive', None), coordinates)
         for (ondisk, filename, suffix) in files:
             submit(
-                login.current_user.username, ondisk, group, filename, suffix,
+                current_user.username, ondisk, group, filename, suffix,
                 cves, coordinates=coordinates
             )
 
@@ -160,7 +160,7 @@ def process_submission(form, group=None):
 
 
 @ui.route('/submit/%s/' % (_GROUP_REGEX), methods=['GET', 'POST'])
-@login.login_required
+@login_required
 def submit_artifact(group):
     form = SUBMISSION_FORMS.get(group, ArtifactSubmit)()
     if form.validate_on_submit():

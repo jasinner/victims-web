@@ -35,7 +35,7 @@ from victims_web.handlers.forms import GroupHashable, ValidateOnlyIf
 from victims_web.models import Account, Hash, Submission
 from victims_web.util import groups, set_hash
 
-from flask_import import login
+from flask_login import current_user
 
 
 class SecureMixin(object):
@@ -47,7 +47,7 @@ class SecureMixin(object):
         """
         The user must be authenticated and have the admin endorsement.
         """
-        if login.current_user.is_authenticated():
+        if current_user.is_authenticated():
             return login.current_user.has_role('admin')
 
 
