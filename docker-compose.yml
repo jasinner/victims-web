@@ -2,7 +2,7 @@ version: '2.1'
 
 services:
   mongo:
-    image: mongo:2.4
+    image: mongo:3.2
     healthcheck:
       test: ["CMD", "mongo", "--quiet", "-d", "127.0.0.1",
       "--eval", "'quit(db.runCommand({ ping: 1 }).ok ? 0 : 2)'"]
