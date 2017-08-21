@@ -8,15 +8,13 @@ RUN apk --update --no-cache add \
         g++ \
     && install -d ${VICTIMS_BASE_DIR} ${APP_SRC}
 
-ADD *requirements.txt /tmp/
-RUN pip install --no-cache-dir \
-        -r /tmp/requirements.txt \
-        -r /tmp/dev-requirements.txt \
-        -r /tmp/test-requirements.txt
-
 WORKDIR ${APP_SRC}
 ENV PYTHONPATH=${APP_SRC}
 
-VOLUME ["${VICTIMS_BASE_DIR}"]
+RUN adduser -S victims &&
+	usermod -a -G root victims
+USER victims
+
+ADD . .
 
 CMD ["python", "-m", "victims.web"]
