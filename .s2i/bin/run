@@ -1,0 +1,3 @@
+#!/bin/bash
+cd victims/web
+exec /usr/libexec/s2i/run
