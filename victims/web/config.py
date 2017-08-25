@@ -14,8 +14,8 @@ LOGGER = getLogger()
 LOG_FOLDER = environ.get('VICTIMS_LOG_DIR', join(VICTIMS_BASE_DIR, 'logs'))
 LOG_LEVEL = LOG_LEVEL_DEBUG
 
-FLASK_HOST = environ.get('FLASK_HOST', '127.0.0.1')
-FLASK_PORT = int(environ.get('FLASK_PORT', 5000))
+FLASK_HOST = environ.get('FLASK_HOST', '0.0.0.0')
+FLASK_PORT = int(environ.get('FLASK_PORT', 8080))
 
 DEBUG = 'VICTIMS_DEBUG' in environ
 TESTING = 'VICTIMS_TESTING' in environ

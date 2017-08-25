@@ -76,7 +76,7 @@ via ``docker-compose`` will;
 #. start a supported version of MongoDB instance
 #. seed the database with test data
 #. start the web server using ``python -m victims.web``
-#. bind to port 5000 on your localhost
+#. bind to port 8080 on your localhost
 
 Starting a server
 ^^^^^^^^^^^^^^^^^
