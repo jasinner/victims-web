@@ -40,7 +40,7 @@ CACHE_THRESHOLD = 20
 MONGODB_SETTINGS = {
     'DB': environ.get('VICTIMS_DB', 'victims'),
     'HOST': environ.get('MONGODB_HOST', 'localhost'),
-    'PORT': int(environ.get('MONGODB_PORT', 27017)),
+    'PORT': 27017,
     'USERNAME': environ.get('MONGODB_USERNAME', ''),
     'PASSWORD': environ.get('MONGODB_PASSWORD', '')
 }
