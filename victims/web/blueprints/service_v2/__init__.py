@@ -25,12 +25,13 @@ from flask import Blueprint, Response, request, current_app
 
 from victims.web.cache import cache
 from victims.web.config import \
-    DEFAULT_GROUP, SUBMISSION_GROUPS, API_UPDATES_DEFAULT_FIELDS
+    DEFAULT_GROUP, SUBMISSION_GROUPS, API_UPDATES_DEFAULT_FIELDS, MONGODB_SETTINGS
 from victims.web.handlers.security import apiauth, api_request_user
 from victims.web.handlers.sslify import ssl_exclude
 from victims.web.models import Hash, Removal, JsonifyMixin, CoordinateDict
 from victims.web.submissions import submit, upload
 from victims.web.util import groups
+from pymongo import MongoClient
 
 v2 = Blueprint('service_v2', __name__)
 
@@ -156,6 +157,21 @@ def status():
     })
 
     return make_response(data)
+
+@v2.route('/healthz')
+def healthz():
+    """
+    Return the health of the service.
+    """
+    print()
+
+    mongo_uri = "mongodb://%s:%s@%s:%s/%s" % (MONGODB_SETTINGS.get('USERNAME'),
+                                            MONGODB_SETTINGS.get('PASSWORD'),
+                                            MONGODB_SETTINGS.get('HOST'),
+                                            MONGODB_SETTINGS.get('PORT'),
+                                            MONGODB_SETTINGS.get('DB'))
+    client = MongoClient(host=mongo_uri)
+    return make_response(client.db_name.command('ping'))
 
 
 # Routing Regexes
