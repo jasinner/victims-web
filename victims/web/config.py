@@ -110,6 +110,7 @@ HASHING_COMMANDS = {
 # Load custom configuration if available, this will override defaults above
 CFG_KEY = 'VICTIMS_CONFIG'
 if CFG_KEY in environ and isfile(environ[CFG_KEY]):
+    print('Found %s' % environ[CFG_KEY])
     envconfig = load_source('envconfig', environ[CFG_KEY])
     if _ENFORCE:
         for key in _ENFORCE_KEYS:
